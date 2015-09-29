@@ -752,9 +752,9 @@ int main(int argc, char ** argv) {
 
 	/* Attempt to set terminal title */
 	if (set_title) {
-		printf("\033kNyanyanyanyanyanyanya...\033\134");
-		printf("\033]1;Nyanyanyanyanyanyanya...\007");
-		printf("\033]2;Nyanyanyanyanyanyanya...\007");
+		printf("\033kSwim swim hungry, swim swim hungry...\033\134");
+		printf("\033]1;Swim swim hungry, swim swim hungry...\007");
+		printf("\033]2;Swim swim hungry, swim swim hungry...\007");
 	}
 
 	if (clear_screen) {
