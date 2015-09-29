@@ -877,19 +877,19 @@ int main(int argc, char ** argv) {
 			 * XXX: Replace this was actually checking the written bytes from a
 			 * call to sprintf or something
 			 */
-			int width = (terminal_width - 29 - nLen) / 2;
+			int width = (terminal_width - 36 - nLen) / 2;
 			/* Spit out some spaces so that we're actually centered */
 			while (width > 0) {
 				printf(" ");
 				width--;
 			}
-			/* You have nyaned for [n] seconds!
+			/* You have swum hungrily for [n] seconds!
 			 * The \033[J ensures that the rest of the line has the dark blue
 			 * background, and the \033[1;37m ensures that our text is bright white.
 			 * The \033[0m prevents the Apple ][ from flipping everything, but
 			 * makes the whole nyancat less bright on the vt220
 			 */
-			printf("\033[1;37mYou have nyaned for %0.0f seconds!\033[J\033[0m", diff);
+			printf("\033[1;37mYou have swum hungrily for %0.0f seconds!\033[J\033[0m", diff);
 		}
 		/* Reset the last color so that the escape sequences rewrite */
 		last = 0;
